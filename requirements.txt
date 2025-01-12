@@ -3,6 +3,7 @@ certifi==2024.12.14
 charset-normalizer==3.4.1
 click==8.1.8
 Django==5.1.4
+django-browser-reload==1.17.0
 django-tailwind-cli==2.21.1
 django-typer==2.6.0
 idna==3.10
