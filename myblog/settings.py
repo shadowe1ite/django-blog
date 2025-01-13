@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_tailwind_cli',
     'django_browser_reload', # remove on deployment
+    'whitenoise.runserver_nostatic',
     'blog'
 ]
 
@@ -151,5 +152,5 @@ STATICFILES_DIRS = (
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # tailwind 
-
+STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
 TAILWIND_CLI_DIST_CSS = 'css/style.css'
