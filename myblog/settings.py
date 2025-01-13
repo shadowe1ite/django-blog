@@ -42,6 +42,7 @@ else:
 
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app', 'https://*.railway.app']
 
 
 # Application definition
