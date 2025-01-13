@@ -103,7 +103,8 @@ DATABASES = {
 POSTGRES_LOCALLY = True
 
 if ENVIRONMENT == "production" or POSTGRES_LOCALLY == True:
-    DATABASES['default'] =  dj_database_url.parse(env('DATABASE_URL'))
+    DATABASES['default'] = dj_database_url.parse(env('DATABASE_URL'))
+    DATABASES['secondary'] = dj_database_url.parse(env('SECONDARY_DATABASE_URL'))
 
 
 # Password validation
