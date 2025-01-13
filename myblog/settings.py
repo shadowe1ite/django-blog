@@ -17,6 +17,7 @@ import dj_database_url
 
 # Setup environment
 env = Env()
+#Env.read_env('.env',)
 Env.read_env('.env',)
 
 ENVIRONMENT=env('ENVIRONMENT', default='production')
