@@ -41,8 +41,8 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app', 'https://*.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.railway.app', '.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app', 'https://*.railway.app', 'https://*.onrender.com']
 
 
 # Application definition
